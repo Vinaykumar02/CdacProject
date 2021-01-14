@@ -1,0 +1,17 @@
+/* /* .loginPage {
+ 
+  max-width: 400px;
+  border: 1px solid grey
+} 
+#heading{    
+    margin: 22px auto 12px;
+    font-family: "Brush Script MT", cursive;
+}
+
+.loginBody{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes 
+    transform: translate(-50%, -50%);
+  } */

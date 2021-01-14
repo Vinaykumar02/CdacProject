@@ -1,0 +1,29 @@
+<div class="loginBody">
+    <div class="loginPage">
+        <div class="siteName">
+            <h1 class="siteHeading" id ="heading">E-Pet Adoption</h1>
+            <form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+                <div class="innerFormdiv">
+                    <div class="formLoginDetails">
+                        <div class="a  ">
+                            <input ngModel placeholder="Username, or email" autocapitalize="off" autocorrect="off"
+                                maxlength="75" name="username" type="text" class="b" value="">
+
+                        </div>
+
+                        <div class="d  ">
+                            <input ngModel placeholder="Password" autocapitalize="off" autocorrect="off" name="password"
+                                type="password" class="c" value="">
+
+                        </div>
+                    </div>
+
+                    <div class="z">
+                        <button class="y " type="submit">
+                            <div class="p ">Log In</div>
+                        </button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

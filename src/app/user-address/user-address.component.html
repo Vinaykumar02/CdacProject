@@ -1,0 +1,43 @@
+<form novalidate #addressForm="ngForm" (ngSubmit)="onSubmit(addressForm)">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Flat Number:</label>
+            <input type="text" class="form-control" id="flatno" placeholder="Flat Number">  
+        </div></div> <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Street:</label>
+            <input type="text" class="form-control" id="street" placeholder="Street Name">
+        </div>
+
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6 ">
+        <label>Area</label>
+        <input type="text" class="form-control" id="area" placeholder="Area">
+    </div>
+</div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label>City</label>
+            <input type="text" class="form-control" id="City">
+        </div>
+        <div class="form-group col-md-3">
+            <label>District</label>
+            <input type="text" class="form-control" id="district">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label>State</label>
+            <select id="State" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Address</button>
+</form>
