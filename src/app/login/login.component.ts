@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AdminService } from 'src/service/admin.service';
 
 
 @Component({
@@ -9,12 +10,16 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private login:AdminService) {
+    
+   }
 
   ngOnInit(): void {
   }
   onSubmit(myform:NgForm)
   {
+    this.login.getLoginCredential();
     console.log("form submited")
   }
 }

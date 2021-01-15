@@ -1,10 +1,32 @@
-/* /* .loginPage {
+ .loginPage {
  
-  max-width: 400px;
-  border: 1px solid grey
+  width: 500px;
+  height: 50%;
+  overflow: hidden;
+  border: 0px solid #000;
+  margin: 50px auto;
+  padding: 10px;
 } 
+.siteName{
+  width: 250px;
+  height: 40%;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid #e6e6e6;
+  padding: 40px 50px;
+}
+.siteName{
+  
+    border: 0px solid #000;
+    margin-bottom: 5px;
+  
+}
 #heading{    
-    margin: 22px auto 12px;
+  height: 50px;
+  width: 175px;
+  margin: auto;
+  position: relative;
+  left: 40px;
     font-family: "Brush Script MT", cursive;
 }
 
@@ -12,6 +34,15 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes 
+    
     transform: translate(-50%, -50%);
-  } */
+  }
+  .a,
+  .b{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }

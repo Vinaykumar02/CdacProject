@@ -4,6 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AdminService {
-
-  constructor() { }
+credential=[{
+  username : "Ajay",
+  password : 123
 }
+]
+  constructor() { }
+
+  getLoginCredential(){
+    return this.credential;
+  }
+}
+
+
+
