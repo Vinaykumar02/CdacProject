@@ -8,12 +8,16 @@ import { AdoptionComponent } from './adoption/adoption.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserAddressComponent } from './user-address/user-address.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AdoptionComponent,
-    UserAddressComponent
+    UserAddressComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
