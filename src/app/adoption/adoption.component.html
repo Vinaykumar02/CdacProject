@@ -1,33 +1,38 @@
 <div class="adoptionBody">
-    <div class="adoptionPage">
+    <div class="formBody col-md-8">
         <div class="">
-            <h4 class="pageHeading" id ="heading">{{petId}}'s Adoption Form:</h4>
+            <h4 class="pageHeading" id="heading">{{petId}}'s Adoption Form:</h4>
             <form novalidate #adoptionForm="ngForm" (ngSubmit)="onSubmit(adoptionForm)">
                 <div class="innerFormdiv">
                     <div class="formUserDetails">
                         <div class="a">
-                            <label>Name:</label><input type="text" id="name" placeholder="Name" class="form-control">
+                            <label>Name:</label><input ngModel type="text" id="name" placeholder="Name"
+                                class="form-control">
                         </div>
                         <div class="b">
-                            <label>Adhar Number:</label><input type="text" id="adhar" placeholder="Adhar Number" class="form-control">
+                            <label>Adhaar Number:</label><input ngModel type="text" id="adhaar"
+                                placeholder="Adhaar Number" class="form-control">
                         </div>
                         <div class="c">
-                            <label>Age:</label><input type="text" id="age" placeholder="Age" class="form-control">
+                            <label>Age:</label><input ngModel type="number" id="age" placeholder="Age"
+                                class="form-control">
                         </div>
                         <div class="d">
-                            <label>PhoneNo:</label><input type="text" id="phoneNo" placeholder="Phone Number" class="form-control">
+                            <label>PhoneNo:</label><input ngModel type="text" id="phoneNo" placeholder="Phone Number"
+                                class="form-control">
                         </div>
                         <div class="e">
-                            <label>Email:</label><input type="email" id="email" placeholder="Email" class="form-control">
+                            <label>Email:</label><input ngModel type="email" id="email" placeholder="Email"
+                                class="form-control">
                         </div>
                         <div class="f">
-                            <label>Petition:</label><input type="checkbox" id="petition" placeholder="Petition" class="">
+                            <input ngModel type="checkbox" id="petition" placeholder="Petition" class=""><label>
+                                Petition</label>
                         </div>
                     </div>
-                    <div class="z">
-                        <button class="y " type="submit">
-                            <div class="p ">Submit </div>
-                        </button></div>
+                    <div class="z" >
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
