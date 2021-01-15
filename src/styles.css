@@ -6,6 +6,9 @@ body{
     background-size: cover;
     z-index: -2;
 }
+form{
+  background-color: #fff;
+}
 
 /* body::after{
     background-image: url('./assets/image/2.jpg');
